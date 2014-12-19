@@ -11,7 +11,7 @@ Preprocessing steps:
 
 4. "tidy_data" data set is created by summarizing all the columns by the "mean" function over the (subject, activity) key pairs
 
-5. the tidy data set is output as the CSV file called "tidy_data.csv"
+5. the tidy data set is output as the CSV file called "csv"
 
 
 
@@ -23,7 +23,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.subject
+   subject
 
 --------------------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.activity
+   activity
 
 --------------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.mean...X
+   mean_of_tBodyAcc.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -73,7 +73,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.mean...Y
+   mean_of_tBodyAcc.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -89,7 +89,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.mean...Z
+   mean_of_tBodyAcc.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -105,7 +105,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.std...X
+   mean_of_tBodyAcc.std...X
 
 --------------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.std...Y
+   mean_of_tBodyAcc.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -137,7 +137,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAcc.std...Z
+   mean_of_tBodyAcc.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -153,7 +153,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.mean...X
+   mean_of_tGravityAcc.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -169,7 +169,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.mean...Y
+   mean_of_tGravityAcc.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -185,7 +185,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.mean...Z
+   mean_of_tGravityAcc.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -201,7 +201,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.std...X
+   mean_of_tGravityAcc.std...X
 
 --------------------------------------------------------------------------------
 
@@ -217,7 +217,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.std...Y
+   mean_of_tGravityAcc.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -233,7 +233,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAcc.std...Z
+   mean_of_tGravityAcc.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -249,7 +249,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.mean...X
+   mean_of_tBodyAccJerk.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -265,7 +265,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.mean...Y
+   mean_of_tBodyAccJerk.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -281,7 +281,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.mean...Z
+   mean_of_tBodyAccJerk.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -297,7 +297,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.std...X
+   mean_of_tBodyAccJerk.std...X
 
 --------------------------------------------------------------------------------
 
@@ -313,7 +313,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.std...Y
+   mean_of_tBodyAccJerk.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -329,7 +329,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerk.std...Z
+   mean_of_tBodyAccJerk.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -345,7 +345,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.mean...X
+   mean_of_tBodyGyro.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -361,7 +361,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.mean...Y
+   mean_of_tBodyGyro.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -377,7 +377,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.mean...Z
+   mean_of_tBodyGyro.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -393,7 +393,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.std...X
+   mean_of_tBodyGyro.std...X
 
 --------------------------------------------------------------------------------
 
@@ -409,7 +409,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.std...Y
+   mean_of_tBodyGyro.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -425,7 +425,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyro.std...Z
+   mean_of_tBodyGyro.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -441,7 +441,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.mean...X
+   mean_of_tBodyGyroJerk.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -457,7 +457,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.mean...Y
+   mean_of_tBodyGyroJerk.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -473,7 +473,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.mean...Z
+   mean_of_tBodyGyroJerk.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -489,7 +489,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.std...X
+   mean_of_tBodyGyroJerk.std...X
 
 --------------------------------------------------------------------------------
 
@@ -505,7 +505,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.std...Y
+   mean_of_tBodyGyroJerk.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -521,7 +521,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerk.std...Z
+   mean_of_tBodyGyroJerk.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -537,7 +537,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccMag.mean..
+   mean_of_tBodyAccMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -553,7 +553,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccMag.std..
+   mean_of_tBodyAccMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -569,7 +569,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAccMag.mean..
+   mean_of_tGravityAccMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -585,7 +585,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tGravityAccMag.std..
+   mean_of_tGravityAccMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -601,7 +601,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerkMag.mean..
+   mean_of_tBodyAccJerkMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -617,7 +617,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyAccJerkMag.std..
+   mean_of_tBodyAccJerkMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -633,7 +633,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroMag.mean..
+   mean_of_tBodyGyroMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -649,7 +649,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroMag.std..
+   mean_of_tBodyGyroMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -665,7 +665,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerkMag.mean..
+   mean_of_tBodyGyroJerkMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -681,7 +681,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_tBodyGyroJerkMag.std..
+   mean_of_tBodyGyroJerkMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -697,7 +697,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.mean...X
+   mean_of_fBodyAcc.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -713,7 +713,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.mean...Y
+   mean_of_fBodyAcc.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -729,7 +729,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.mean...Z
+   mean_of_fBodyAcc.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -745,7 +745,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.std...X
+   mean_of_fBodyAcc.std...X
 
 --------------------------------------------------------------------------------
 
@@ -761,7 +761,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.std...Y
+   mean_of_fBodyAcc.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -777,7 +777,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.std...Z
+   mean_of_fBodyAcc.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -793,7 +793,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.meanFreq...X
+   mean_of_fBodyAcc.meanFreq...X
 
 --------------------------------------------------------------------------------
 
@@ -809,7 +809,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.meanFreq...Y
+   mean_of_fBodyAcc.meanFreq...Y
 
 --------------------------------------------------------------------------------
 
@@ -825,7 +825,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAcc.meanFreq...Z
+   mean_of_fBodyAcc.meanFreq...Z
 
 --------------------------------------------------------------------------------
 
@@ -841,7 +841,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.mean...X
+   mean_of_fBodyAccJerk.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -857,7 +857,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.mean...Y
+   mean_of_fBodyAccJerk.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -873,7 +873,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.mean...Z
+   mean_of_fBodyAccJerk.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -889,7 +889,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.std...X
+   mean_of_fBodyAccJerk.std...X
 
 --------------------------------------------------------------------------------
 
@@ -905,7 +905,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.std...Y
+   mean_of_fBodyAccJerk.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -921,7 +921,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.std...Z
+   mean_of_fBodyAccJerk.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -937,7 +937,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.meanFreq...X
+   mean_of_fBodyAccJerk.meanFreq...X
 
 --------------------------------------------------------------------------------
 
@@ -953,7 +953,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.meanFreq...Y
+   mean_of_fBodyAccJerk.meanFreq...Y
 
 --------------------------------------------------------------------------------
 
@@ -969,7 +969,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccJerk.meanFreq...Z
+   mean_of_fBodyAccJerk.meanFreq...Z
 
 --------------------------------------------------------------------------------
 
@@ -985,7 +985,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.mean...X
+   mean_of_fBodyGyro.mean...X
 
 --------------------------------------------------------------------------------
 
@@ -1001,7 +1001,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.mean...Y
+   mean_of_fBodyGyro.mean...Y
 
 --------------------------------------------------------------------------------
 
@@ -1017,7 +1017,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.mean...Z
+   mean_of_fBodyGyro.mean...Z
 
 --------------------------------------------------------------------------------
 
@@ -1033,7 +1033,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.std...X
+   mean_of_fBodyGyro.std...X
 
 --------------------------------------------------------------------------------
 
@@ -1049,7 +1049,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.std...Y
+   mean_of_fBodyGyro.std...Y
 
 --------------------------------------------------------------------------------
 
@@ -1065,7 +1065,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.std...Z
+   mean_of_fBodyGyro.std...Z
 
 --------------------------------------------------------------------------------
 
@@ -1081,7 +1081,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.meanFreq...X
+   mean_of_fBodyGyro.meanFreq...X
 
 --------------------------------------------------------------------------------
 
@@ -1097,7 +1097,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.meanFreq...Y
+   mean_of_fBodyGyro.meanFreq...Y
 
 --------------------------------------------------------------------------------
 
@@ -1113,7 +1113,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyGyro.meanFreq...Z
+   mean_of_fBodyGyro.meanFreq...Z
 
 --------------------------------------------------------------------------------
 
@@ -1129,7 +1129,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccMag.mean..
+   mean_of_fBodyAccMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -1145,7 +1145,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccMag.std..
+   mean_of_fBodyAccMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -1161,7 +1161,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyAccMag.meanFreq..
+   mean_of_fBodyAccMag.meanFreq..
 
 --------------------------------------------------------------------------------
 
@@ -1177,7 +1177,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyAccJerkMag.mean..
+   mean_of_fBodyBodyAccJerkMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -1193,7 +1193,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyAccJerkMag.std..
+   mean_of_fBodyBodyAccJerkMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -1209,7 +1209,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyAccJerkMag.meanFreq..
+   mean_of_fBodyBodyAccJerkMag.meanFreq..
 
 --------------------------------------------------------------------------------
 
@@ -1225,7 +1225,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroMag.mean..
+   mean_of_fBodyBodyGyroMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -1241,7 +1241,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroMag.std..
+   mean_of_fBodyBodyGyroMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -1257,7 +1257,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroMag.meanFreq..
+   mean_of_fBodyBodyGyroMag.meanFreq..
 
 --------------------------------------------------------------------------------
 
@@ -1273,7 +1273,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroJerkMag.mean..
+   mean_of_fBodyBodyGyroJerkMag.mean..
 
 --------------------------------------------------------------------------------
 
@@ -1289,7 +1289,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroJerkMag.std..
+   mean_of_fBodyBodyGyroJerkMag.std..
 
 --------------------------------------------------------------------------------
 
@@ -1305,7 +1305,7 @@ The description of the original features is provided with the input data set. Th
 
 ================================================================================
 
-   tidy_data.mean_of_fBodyBodyGyroJerkMag.meanFreq..
+   mean_of_fBodyBodyGyroJerkMag.meanFreq..
 
 --------------------------------------------------------------------------------
 
