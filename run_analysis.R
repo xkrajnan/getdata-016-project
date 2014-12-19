@@ -42,4 +42,4 @@ tidy_data <- setDT(data)[, lapply(.SD, mean), by=list(subject, activity)]
 setnames(tidy_data, old=3:81, new=sub("(.*)", "mean_of_\\1", names(tidy_data)[3:81]))
 
 # save the output data
-write.csv(tidy_data, file="tidy_data.csv", row.names=FALSE)
+write.table(tidy_data, file="tidy_data.txt", row.names=FALSE)

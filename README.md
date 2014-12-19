@@ -19,5 +19,5 @@ preprocessing steps:
 
 4. "tidy_data" data set is created by summarizing all the columns by the "mean" function over the (subject, activity) key pairs
 
-5. the tidy data set is output as the CSV file called "tidy_data.csv"
+5. the tidy data set is output as a TXT file called "tidy_data.txt"
 
