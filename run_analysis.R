@@ -20,6 +20,7 @@ features <- rbind(train_features, test_features)
 activity <- rbind(train_activity, test_activity)
 
 # set the meaningful names of the features and actions
+feature_names <- gsub("\\.+", "_", make.names(feature_names))
 names(subject) <- c("subject")
 names(features) <- feature_names
 names(activity) <- c("activity")
@@ -36,10 +37,10 @@ levels(activity[,1]) <- activity_names
 data <- cbind(subject, activity, features)
 
 # generate the required tidy data table:
-# - summarize the data with means over the subject-activity pairs
-# - rename the features so they reflect the summarization with mean
+# - aggregate the data with means over the subject-activity pairs
+# - rename the features so they reflect the aggregation with mean
 tidy_data <- setDT(data)[, lapply(.SD, mean), by=list(subject, activity)]
-setnames(tidy_data, old=3:81, new=sub("(.*)", "mean_of_\\1", names(tidy_data)[3:81]))
+setnames(tidy_data, old=3:81, new=sub("(.*)", "mean_\\1", names(tidy_data)[3:81]))
 
 # save the output data
 write.table(tidy_data, file="tidy_data.txt", row.names=FALSE)

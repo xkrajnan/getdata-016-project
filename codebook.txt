@@ -2,15 +2,15 @@ The input data can be downloaded from https://d396qusza40orc.cloudfront.net/getd
 
 Preprocessing steps:
 
-1. the training and testing data are read and merged
+1. the training and testing data are read and merged ("subject_{text,train}.txt", "X_{test,train}.txt", "y_{test,train}.txt")
 
 2. a meaningful data labels are read from the provided files ("features.txt", "activity_labels.txt") and assigned to the created table
 
-3. features are subset to those relevant to the tasl (these are those containing "mean" or "std" in their names)
+3. features are subset to those relevant to the task (those containing "mean" or "std" in their names)
 
 4. "tidy_data" data set is created by summarizing all the columns by the "mean" function over the (subject, activity) key pairs
 
-5. the tidy data set is output as the CSV file called "csv"
+5. the tidy data set is output in "tidy_data.txt"
 
 
 
@@ -20,25 +20,22 @@ The description of the original features is provided with the input data set. Th
 
 Columns:
 
+
 ================================================================================
 
-   subject
+   subject 'subject ID'
 
 --------------------------------------------------------------------------------
 
    Storage mode: integer
-   Measurement: interval
+   Measurement: nominal
 
             Min:   1.000
             Max:  30.000
-           Mean:  15.500
-       Std.Dev.:   8.655
-       Skewness:   0.000
-       Kurtosis:  -1.203
 
 ================================================================================
 
-   activity
+   activity 'activity ID'
 
 --------------------------------------------------------------------------------
 
@@ -56,12 +53,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.mean...X
+   mean_tBodyAcc_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:   0.222
             Max:   0.301
@@ -72,12 +69,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.mean...Y
+   mean_tBodyAcc_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.041
             Max:  -0.001
@@ -88,12 +85,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.mean...Z
+   mean_tBodyAcc_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.153
             Max:  -0.075
@@ -104,12 +101,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.std...X
+   mean_tBodyAcc_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.996
             Max:   0.627
@@ -120,12 +117,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.std...Y
+   mean_tBodyAcc_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.990
             Max:   0.617
@@ -136,12 +133,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAcc.std...Z
+   mean_tBodyAcc_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.988
             Max:   0.609
@@ -152,12 +149,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.mean...X
+   mean_tGravityAcc_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.680
             Max:   0.975
@@ -168,12 +165,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.mean...Y
+   mean_tGravityAcc_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.480
             Max:   0.957
@@ -184,12 +181,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.mean...Z
+   mean_tGravityAcc_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.495
             Max:   0.958
@@ -200,12 +197,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.std...X
+   mean_tGravityAcc_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.997
             Max:  -0.830
@@ -216,12 +213,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.std...Y
+   mean_tGravityAcc_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.994
             Max:  -0.644
@@ -232,12 +229,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAcc.std...Z
+   mean_tGravityAcc_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.991
             Max:  -0.610
@@ -248,12 +245,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.mean...X
+   mean_tBodyAccJerk_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  0.043
             Max:  0.130
@@ -264,12 +261,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.mean...Y
+   mean_tBodyAccJerk_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.039
             Max:   0.057
@@ -280,12 +277,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.mean...Z
+   mean_tBodyAccJerk_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.067
             Max:   0.038
@@ -296,12 +293,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.std...X
+   mean_tBodyAccJerk_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.995
             Max:   0.544
@@ -312,12 +309,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.std...Y
+   mean_tBodyAccJerk_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.990
             Max:   0.355
@@ -328,12 +325,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerk.std...Z
+   mean_tBodyAccJerk_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.993
             Max:   0.031
@@ -344,12 +341,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.mean...X
+   mean_tBodyGyro_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.206
             Max:   0.193
@@ -360,12 +357,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.mean...Y
+   mean_tBodyGyro_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.204
             Max:   0.027
@@ -376,12 +373,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.mean...Z
+   mean_tBodyGyro_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.072
             Max:   0.179
@@ -392,12 +389,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.std...X
+   mean_tBodyGyro_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.994
             Max:   0.268
@@ -408,12 +405,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.std...Y
+   mean_tBodyGyro_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.994
             Max:   0.477
@@ -424,12 +421,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyro.std...Z
+   mean_tBodyGyro_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.986
             Max:   0.565
@@ -440,12 +437,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.mean...X
+   mean_tBodyGyroJerk_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.157
             Max:  -0.022
@@ -456,12 +453,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.mean...Y
+   mean_tBodyGyroJerk_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.077
             Max:  -0.013
@@ -472,12 +469,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.mean...Z
+   mean_tBodyGyroJerk_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.092
             Max:  -0.007
@@ -488,12 +485,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.std...X
+   mean_tBodyGyroJerk_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.997
             Max:   0.179
@@ -504,12 +501,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.std...Y
+   mean_tBodyGyroJerk_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.997
             Max:   0.296
@@ -520,12 +517,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerk.std...Z
+   mean_tBodyGyroJerk_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.995
             Max:   0.193
@@ -536,12 +533,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccMag.mean..
+   mean_tBodyAccMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.986
             Max:   0.645
@@ -552,12 +549,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccMag.std..
+   mean_tBodyAccMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.986
             Max:   0.428
@@ -568,12 +565,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAccMag.mean..
+   mean_tGravityAccMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.986
             Max:   0.645
@@ -584,12 +581,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tGravityAccMag.std..
+   mean_tGravityAccMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.986
             Max:   0.428
@@ -600,12 +597,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerkMag.mean..
+   mean_tBodyAccJerkMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.993
             Max:   0.434
@@ -616,12 +613,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyAccJerkMag.std..
+   mean_tBodyAccJerkMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.995
             Max:   0.451
@@ -632,12 +629,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroMag.mean..
+   mean_tBodyGyroMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.981
             Max:   0.418
@@ -648,12 +645,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroMag.std..
+   mean_tBodyGyroMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.981
             Max:   0.300
@@ -664,12 +661,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerkMag.mean..
+   mean_tBodyGyroJerkMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.997
             Max:   0.088
@@ -680,12 +677,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_tBodyGyroJerkMag.std..
+   mean_tBodyGyroJerkMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.998
             Max:   0.250
@@ -696,12 +693,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.mean...X
+   mean_fBodyAcc_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.995
             Max:   0.537
@@ -712,12 +709,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.mean...Y
+   mean_fBodyAcc_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.989
             Max:   0.524
@@ -728,12 +725,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.mean...Z
+   mean_fBodyAcc_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.989
             Max:   0.281
@@ -744,12 +741,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.std...X
+   mean_fBodyAcc_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.997
             Max:   0.659
@@ -760,12 +757,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.std...Y
+   mean_fBodyAcc_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.991
             Max:   0.560
@@ -776,12 +773,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.std...Z
+   mean_fBodyAcc_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.987
             Max:   0.687
@@ -792,12 +789,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.meanFreq...X
+   mean_fBodyAcc_meanFreq_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.636
             Max:   0.159
@@ -808,12 +805,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.meanFreq...Y
+   mean_fBodyAcc_meanFreq_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.380
             Max:   0.467
@@ -824,12 +821,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAcc.meanFreq...Z
+   mean_fBodyAcc_meanFreq_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.520
             Max:   0.403
@@ -840,12 +837,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.mean...X
+   mean_fBodyAccJerk_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.995
             Max:   0.474
@@ -856,12 +853,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.mean...Y
+   mean_fBodyAccJerk_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.989
             Max:   0.277
@@ -872,12 +869,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.mean...Z
+   mean_fBodyAccJerk_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.992
             Max:   0.158
@@ -888,12 +885,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.std...X
+   mean_fBodyAccJerk_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.995
             Max:   0.477
@@ -904,12 +901,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.std...Y
+   mean_fBodyAccJerk_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.990
             Max:   0.350
@@ -920,12 +917,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.std...Z
+   mean_fBodyAccJerk_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.993
             Max:  -0.006
@@ -936,12 +933,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.meanFreq...X
+   mean_fBodyAccJerk_meanFreq_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.576
             Max:   0.331
@@ -952,12 +949,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.meanFreq...Y
+   mean_fBodyAccJerk_meanFreq_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.602
             Max:   0.196
@@ -968,12 +965,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccJerk.meanFreq...Z
+   mean_fBodyAccJerk_meanFreq_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.628
             Max:   0.230
@@ -984,12 +981,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.mean...X
+   mean_fBodyGyro_mean_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.993
             Max:   0.475
@@ -1000,12 +997,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.mean...Y
+   mean_fBodyGyro_mean_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.994
             Max:   0.329
@@ -1016,12 +1013,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.mean...Z
+   mean_fBodyGyro_mean_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.986
             Max:   0.492
@@ -1032,12 +1029,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.std...X
+   mean_fBodyGyro_std_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.995
             Max:   0.197
@@ -1048,12 +1045,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.std...Y
+   mean_fBodyGyro_std_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.994
             Max:   0.646
@@ -1064,12 +1061,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.std...Z
+   mean_fBodyGyro_std_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.987
             Max:   0.522
@@ -1080,12 +1077,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.meanFreq...X
+   mean_fBodyGyro_meanFreq_X
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.396
             Max:   0.249
@@ -1096,12 +1093,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.meanFreq...Y
+   mean_fBodyGyro_meanFreq_Y
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.667
             Max:   0.273
@@ -1112,12 +1109,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyGyro.meanFreq...Z
+   mean_fBodyGyro_meanFreq_Z
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.507
             Max:   0.377
@@ -1128,12 +1125,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccMag.mean..
+   mean_fBodyAccMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.987
             Max:   0.587
@@ -1144,12 +1141,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccMag.std..
+   mean_fBodyAccMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.988
             Max:   0.179
@@ -1160,12 +1157,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyAccMag.meanFreq..
+   mean_fBodyAccMag_meanFreq_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.312
             Max:   0.436
@@ -1176,12 +1173,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyAccJerkMag.mean..
+   mean_fBodyBodyAccJerkMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.994
             Max:   0.538
@@ -1192,12 +1189,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyAccJerkMag.std..
+   mean_fBodyBodyAccJerkMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.994
             Max:   0.316
@@ -1208,12 +1205,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyAccJerkMag.meanFreq..
+   mean_fBodyBodyAccJerkMag_meanFreq_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.125
             Max:   0.488
@@ -1224,12 +1221,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroMag.mean..
+   mean_fBodyBodyGyroMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.987
             Max:   0.204
@@ -1240,12 +1237,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroMag.std..
+   mean_fBodyBodyGyroMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.981
             Max:   0.237
@@ -1256,12 +1253,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroMag.meanFreq..
+   mean_fBodyBodyGyroMag_meanFreq_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.457
             Max:   0.410
@@ -1272,12 +1269,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroJerkMag.mean..
+   mean_fBodyBodyGyroJerkMag_mean_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.998
             Max:   0.147
@@ -1288,12 +1285,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroJerkMag.std..
+   mean_fBodyBodyGyroJerkMag_std_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: std
 
             Min:  -0.998
             Max:   0.288
@@ -1304,12 +1301,12 @@ Columns:
 
 ================================================================================
 
-   mean_of_fBodyBodyGyroJerkMag.meanFreq..
+   mean_fBodyBodyGyroJerkMag_meanFreq_
 
 --------------------------------------------------------------------------------
 
    Storage mode: double
-   Measurement: interval
+   Measurement: mean
 
             Min:  -0.183
             Max:   0.426
